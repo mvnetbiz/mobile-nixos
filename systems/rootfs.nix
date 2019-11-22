@@ -37,14 +37,7 @@ in
 
   # FIXME: this is not a rootfs!
   system.build.diskImage = 
-    pkgs.imageBuilder.diskImage.makeMBR {
-      name = "mobile-nixos";
-      diskID = "01234567";
-      partitions = [
-        # FIXME : initrd how?
-        config.system.build.rootfs
-      ];
-    }
+    throw "The system needs to implement `diskImage`."
   ;
 
   boot.postBootCommands = ''
