@@ -30,6 +30,7 @@
   ./mobile-device.nix
   ./nixpkgs.nix
   ./quirks/qualcomm/default.nix
+  ./quirks-u-boot.nix
   ./system-target.nix
   ./system-types.nix
 ]
