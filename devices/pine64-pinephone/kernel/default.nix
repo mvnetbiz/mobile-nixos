@@ -6,13 +6,13 @@
 }:
 
 (mobile-nixos.kernel-builder {
-  version = "5.3.0";
+  version = "5.5.y";
   configfile = ./config.aarch64;
   src = fetchFromGitLab {
     owner = "pine64-org";
     repo = "linux";
-    rev = "f45877952070a0339c38839519558510f00ddb59";
-    sha256 = "0mbxqmirpkm3idmbjws22bw39z1zfc1hxycwyw0sz4dw4adsggwp";
+    rev = "7919bfee71110bba9b053cd66843f2792d857bab";
+    sha256 = "0s92s6n6308311f68ivsjlfkxmzvqk5ph9r79fcnv241n2xp5g14";
   };
   patches = [
     (fetchpatch {

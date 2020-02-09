@@ -1,4 +1,4 @@
-= PinePhone Don't be evil development kit
+= PinePhone v1.1 Braveheart
 include::_support/common.inc[]
 
 == Building a full disk image
@@ -15,7 +15,7 @@ The PinePhone will boot from SD card if a bootloader can be found. This means
 that the full disk image can be flashed to an SD card.
 
 ```
- $ nix-build --argstr device pine64-dont-be-evil -A build.diskImage
+ $ nix-build --argstr device pine64-pinephone -A build.diskImage
 ```
 
 If built using cross-compilation, a warning will be printed, here it is:

@@ -1,17 +1,17 @@
 { config, lib, pkgs, ... }:
 
 {
-  mobile.device.name = "pine64-dont-be-evil";
+  mobile.device.name = "pine64-pinephone";
   mobile.device.info = rec {
-    name = "PinePhone Don't be evil development kit";
+    name = "PinePhone Braveheart";
     # TODO : make kernel part of options.
     kernel = pkgs.callPackage ./kernel { kernelPatches = pkgs.defaultKernelPatches; };
 
     format_version = "0";
     manufacturer = "PINE64";
-    codename = "pine64-dont-be-evil";
+    codename = "pine64-pinephone";
     date = "";
-    dtb = "${kernel}/sun50i-a64-dontbeevil.dtb";
+    dtb = "${kernel}/sun50i-a64-pinephone.dtb";
     modules_initfs = "";
     arch = "aarch64";
     keyboard = false;
