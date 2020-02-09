@@ -70,14 +70,6 @@ in
       CONFIG_BOOTDELAY=0
     '';
   }).overrideAttrs(old: rec {
-    version = "2019.10";
-    src = fetchFromGitLab {
-      domain = "gitlab.denx.de";
-      owner = "u-boot";
-      repo = "u-boot";
-      sha256 = "0fj1dgg6nlxkxhjl1ir0ksq6mbkjj962biv50p6zh71mhbi304in";
-      rev = "v${version}";
-    };
     postInstall = ''
       cp .config $out/build.config
     '';
